@@ -1,9 +1,11 @@
 # Change Log
 
-All notable changes to the "shell-doctor" extension will be documented in this file.
+All notable changes to the `shDoc` extension will be documented in this file.
 
-Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
+## [0.0.1] - Initial Release
 
-## [Unreleased]
-
-- Initial release
+- Initial release of the shDoc parsing engine.
+- Full support for JSDoc and TSDoc tags in Shell scripts.
+- Hover provider with Markdown rendering and Shebang resolution.
+- Syntax highlighting and Semantic Token provider.
+- Auto-formatting and doc-block continuation typing events.

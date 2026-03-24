@@ -55,7 +55,7 @@ Use the `###!` opening at the very top of your script (under the shebang) for gl
  ##
 ```
 
-**High Completeness:** Tags like *@param* and *@author* follow JSDoc standards. `shDoc` provides autocomplete for all *84+* JSDoc tags out of the box, ensuring every detail of your script is documented.
+**High Completion:** Tags like *@param* and *@author* follow JSDoc standards. `shDoc` provides autocomplete for all *84+* JSDoc tags out of the box, ensuring every detail of your script is documented.
 
 ## Feedback
 
