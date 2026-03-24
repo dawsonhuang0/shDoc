@@ -13,11 +13,11 @@ Install `shDoc` via Visual Studio Code extensions marketplace.
 
 or manually install `shDoc` in the following steps:
 
-1\. Download `shdoc-release-<version>.vsix` from our [Latest Release](https://github.com/dawsonhuang0/shDoc/releases).
+1\. Download `shdoc-<version>.vsix` from our [Latest Release](https://github.com/dawsonhuang0/shDoc/releases).
 
 2\. Run the following command to install:
 ```bash
-code --install-extension shdoc-release-<version>.vsix
+code --install-extension shdoc-<version>.vsix
 ```
 
 ## Usage
