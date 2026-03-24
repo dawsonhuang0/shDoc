@@ -1,5 +1,9 @@
-out
-dist
-node_modules
+# folders
+out/
+dist/
+node_modules/
 .vscode-test/
+
+# files
+.DS_Store
 *.vsix
