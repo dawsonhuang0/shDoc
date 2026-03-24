@@ -1,71 +1,72 @@
-# shell-doctor README
+# shDoc
 
-This is the README for your extension "shell-doctor". After writing up a brief description, we recommend including the following sections.
+<img src="demo.gif" width="550" alt="shDoc Demo">
 
-## Features
+#### **✨ Adding intelligence to your shell scripts** — An API documentation standard/generator for Shell.
 
-Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
+💡 Bring the power, structure, and autocomplete of modern JavaScript documentation to your bash environment.  
+🛑 Stop guessing what your shell functions do; ✅ Start documenting them properly.
 
-For example if there is an image subfolder under your extension project workspace:
+## Getting Started
 
-\!\[feature X\]\(images/feature-x.png\)
+Install `shDoc` via Visual Studio Code extensions marketplace.
 
-> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
+or manually install `shDoc` in the following steps:
 
-## Requirements
+1\. Download `shdoc-release-<version>.vsix` from our [Latest Release](https://github.com/dawsonhuang0/shDoc/releases).
 
-If you have any requirements or dependencies, add a section describing those and how to install and configure them.
+2\. Run the following command to install:
+```bash
+code --install-extension shdoc-release-<version>.vsix
+```
 
-## Extension Settings
+## Usage
 
-Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
+`shDoc` brings the familiarity of JSDoc to the world of Shell Scripting.
 
-For example:
+**Opening:** Use `###` (equivalent to `/**`)  
+**Closing:** Use `##` (equivalent to `*/`)
 
-This extension contributes the following settings:
+### Variable/Function Documentation
 
-* `myExtension.enable`: Enable/disable this extension.
-* `myExtension.thing`: Set to `blah` to do something.
+Place the block directly above your variable/function to enable hover intelligence and symbol tracking:
 
-## Known Issues
+```bash
+###
+ # Example Doc.
+ # 
+ # @param $1 - I'm a param.
+ ##
+function example() {
+  echo "$1"
+}
+```
 
-Calling out known issues can help limit users opening duplicate issues against your extension.
+### ✨ Script Headers (sheDoc)
 
-## Release Notes
+Use the `###!` opening at the very top of your script (under the shebang) for global metadata:
 
-Users appreciate release notes as you update your extension.
+```bash
+#!/bin/bash
+###!
+ # This script is for example.
+ # 
+ # @author Example <shebang@example.com>
+ ##
+```
 
-### 1.0.0
+**High Completeness:** Tags like *@param* and *@author* follow JSDoc standards. `shDoc` provides autocomplete for all *84+* JSDoc tags out of the box, ensuring every detail of your script is documented.
 
-Initial release of ...
+## Feedback
 
-### 1.0.1
+**Found a bug?** Feel free to [open an issue](https://github.com/dawsonhuang0/shDoc/issues/new?labels=bug).  
+**New tag/feature idea?** Don't hesitate to [share it with us](https://github.com/dawsonhuang0/shDoc/issues/new?labels=new%20feature).
 
-Fixed issue #.
+## Acknowledgments
 
-### 1.1.0
+- [JSDoc](https://jsdoc.app): For providing the gold standard of documentation syntax that inspired this project.
 
-Added features X, Y, and Z.
+## License
 
----
-
-## Following extension guidelines
-
-Ensure that you've read through the extensions guidelines and follow the best practices for creating your extension.
-
-* [Extension Guidelines](https://code.visualstudio.com/api/references/extension-guidelines)
-
-## Working with Markdown
-
-You can author your README using Visual Studio Code. Here are some useful editor keyboard shortcuts:
-
-* Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux).
-* Toggle preview (`Shift+Cmd+V` on macOS or `Shift+Ctrl+V` on Windows and Linux).
-* Press `Ctrl+Space` (Windows, Linux, macOS) to see a list of Markdown snippets.
-
-## For more information
-
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
-
-**Enjoy!**
+Distributed under the MIT License.  
+See [`LICENSE`](LICENSE) for more information.
