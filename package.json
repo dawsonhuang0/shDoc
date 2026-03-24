@@ -1,6 +1,6 @@
 {
-  "name": "shell-doctor",
-  "displayName": "Shell Doctor",
+  "name": "shdoc",
+  "displayName": "shDoc",
   "description": "JSDoc-style documentation, hovers, and autocomplete for shell scripts.",
   "version": "0.0.1",
   "engines": {
