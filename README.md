@@ -9,7 +9,7 @@
 
 ## Getting Started
 
-Install `shDoc` via Visual Studio Code extensions marketplace.
+Install `shDoc` via Visual Studio Code extensions marketplace - [shDoc](https://marketplace.visualstudio.com/items?itemName=DawsonHuang.shdoc);
 
 or manually install `shDoc` in the following steps:
 
