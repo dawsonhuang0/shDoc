@@ -3,8 +3,8 @@
   "displayName": "shDoc",
   "description": "JSDoc-style documentation, hovers, and autocomplete for shell scripts.",
   "icon": "logo.png",
-  "version": "0.0.1",
-  "license":"MIT",
+  "version": "0.0.2",
+  "license": "MIT",
   "engines": {
     "vscode": "^1.45.0"
   },
